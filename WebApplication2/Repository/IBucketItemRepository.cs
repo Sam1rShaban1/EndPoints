@@ -6,5 +6,9 @@ namespace WebApplication2.Repository
     {
         Task<IEnumerable<BucketItem>> GetAllAsync();
         Task AddAsync(BucketItem item);
+        Task UpdateAsync(BucketItem item);
+        Task DeleteAsync(BucketItem item);
+        Task MarkAsCompleteAsync(BucketItem item);
+        Task FindOneAsync(BucketItem item);
     }
 }
